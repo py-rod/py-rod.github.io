@@ -1,0 +1,1082 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: "Ubuntu", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 90px;
+}
+
+body {
+    background-color: #eae8e8;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 150px;
+
+}
+
+/* Top bar */
+
+.nav-input{
+    display: none;
+}
+
+.nav-menu-svg{
+    display: none;
+}
+
+
+
+.container-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #2d3742;
+    height: 75px;
+    border-bottom: 1px solid rgb(24, 23, 23);
+    box-shadow: 0 0 20px #2d3742;
+}
+
+.nav-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container-url-menu{
+    margin-right: 20px;
+}
+
+.nav-logo{
+    padding: 10px;
+    font-size: 35px;
+    color: white;
+}
+
+.nav-url-item {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-container-li-menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0 40px;
+    list-style-type: none;
+}
+
+
+.nav-item-li-menu {
+    --clippy: polygon(48% 45%, 48% 45%, 48% 47%, 47% 46%);
+}
+  
+.nav-item-li-menu::after {
+    content: "";
+    background-color: rgb(129, 173, 255);
+    display: block;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.4s;
+}
+  
+.nav-item-li-menu:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Redes sociaes */
+
+.div-container-links-social {
+    width: 50px;
+    height: 200px;
+    position: fixed;
+    z-index: 10;
+    bottom: 65px;
+    left: 40px;
+    right: auto;
+}
+
+.div-ul-container-items {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+}
+
+.div-ul-container-items::after {
+    position: relative;
+    display: block;
+    content: "";
+    background-color: gray;
+    width: 150px;
+    height: 2px;
+    top: 75px;
+    margin: auto 0;
+    left: -3px;
+    transform: rotate(90deg);
+}
+
+.div-container-svg-social{
+    display: flex;
+    position: relative;
+    padding: 15px;
+    color: white;
+}
+
+.div-link-svg-bar {
+    transition: all 0.25s;
+    fill: #363333;
+}
+
+.div-link-svg-bar:hover {
+    fill: black;
+    transition: all 0.25s;
+    transform: translateY(-5px);
+}
+
+/* email en la parte baja derecha */
+
+.div-container-email {
+    position: fixed;
+    left: auto;
+    z-index: 10;
+    right: -25px;
+    margin: 0 auto;
+    bottom: 160px;
+    transform: rotate(90deg);
+}
+
+.-div-a-container-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-email {
+    display: flex;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #2b2828;
+    transition: all 0.25s;
+    justify-content: center;
+    width: 180px;
+}
+
+.div-email:hover {
+    transform: translateX(-10px);
+    color: black;
+    font-weight: bold;
+}
+
+.div-email::after {
+    display: inline-block;
+    content: "";
+    position: fixed;
+    width: 100px;
+    height: 2px;
+    top: auto;
+    left: auto;
+    right: -115px;
+    bottom: 7px;
+    background-color: gray;
+}
+
+/* Primer section de saludo e intro */
+
+.section-saludo {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    margin-top: 90px;
+    padding: 40px 30px;
+    flex-direction: column;
+    height: 400px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    border: 3px solid grey;
+    box-shadow: -15px 15px rgb(158, 155, 155);
+}
+
+.div-container-p {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.div-p-saludo {
+    display: block;
+    color: rgb(23, 87, 204);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.div-container-nombre {
+    display: block;
+    height: 160px;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.div-h1-nombre {
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.div-container-p-intro {
+    display: block;
+    height: 80px;
+    width: 100%;
+}
+
+.div-p-intro {
+    width: 100%;
+    font-size: 25px;
+    color: #2d3742e5;
+    font-weight: 500;
+}
+
+.div-container-a-button {
+    height: 50px;
+    width: 260px;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.div-container-button {
+    text-decoration: none;
+}
+
+.div-button-about {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-left: 0;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(23, 86, 204, 0.829);
+    transition: all 0.2s;
+}
+
+.div-button-about:hover {
+    background-color: rgb(126, 126, 126);
+    transition: all 0.2s;
+}
+
+
+
+/* Seccion de acerca de mi */
+
+.section-about {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 3px solid grey;
+    box-shadow: -15px 15px rgb(158, 155, 155);
+}
+
+.div-title-about {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.div-title-about::after {
+    display: block;
+    position: relative;
+    z-index: 10;
+    content: "";
+    height: 2px;
+    background-color: gray;
+    width: 500px;
+    top: 25px;
+    margin-left: 20px;
+}
+
+.div-container-all-item-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    padding: 50px 0;
+    gap: 10px 10px;
+
+}
+
+.div-container-description{
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: flex;
+    align-items:calc(20px);
+}
+
+.div-description-about{
+    display: flex;
+    padding: 60px 0;
+    font-size: 17px;
+}
+
+.div-ul-container-lan{
+    display: grid;
+    grid-area: 2 / 1 / span 1 / span 1;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    gap: 10px 0;
+}
+
+.div-item-lan{
+    color: rgb(51, 50, 50);
+    font-size: 15px;
+}
+
+.div-item-lan::before{
+    display: inline-block;
+    content: "▹ ";
+    height: 2px;
+    margin-right: 5px;
+    color: rgb(2, 74, 209);
+}
+
+
+.div-container-figure{
+    grid-area: 1 / 2 / span 3 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.div-container-foto{
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: -10px 10px gray;
+}
+
+
+.div-foto-about{
+    position: relative;
+    top: 4px;
+    border-radius: 10px;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+/* Seccion de los projectos */
+
+
+.section-projects{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    margin-top: 400px;
+    padding: 40px 30px;
+    flex-direction: column;
+    height: 600px;
+    border-radius: 10px;
+    border: 3px solid grey;
+    box-shadow: -15px 15px rgb(158, 155, 155);
+}
+
+
+.div-container-h2-projects{
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+
+.div-title-projects{
+    display: flex;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-weight: 900;
+}
+
+.div-title-projects::after{
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 60%;
+    background-color: gray;
+    margin-left: 20px;
+}
+
+.div-container-ul-projects{
+    padding: 20px;
+    height: 100%;
+}
+
+
+.div-ul-container-items-project{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 190px 190px;
+    gap: 20px 30px;
+    list-style-type: none;
+    padding: 10px;
+    grid-auto-flow: column;
+}
+
+
+.div-ul-li-project{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 75, 209, 0.767);
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid rgb(26, 25, 25);
+    box-shadow: -8px 0px 2px rgb(156, 156, 156);
+    transition: box-shadow .4s;
+    transition: all .4s;
+}
+.div-ul-li-project:hover{
+    transform: perspective(30px) translateZ(2.5px);
+    box-shadow: -8px 0px 5px gray;
+    transition: perspective 1s;
+    transition: box-shadow .1s;
+}
+
+
+.div-container-figure-a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-container-github-svg-repository{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.div-item-svg-folder{
+    fill: rgb(220, 220, 221);
+}
+
+
+.div-item-svg-repo{
+    fill:rgb(220, 220, 221);
+    transition: fill .5s;
+}
+
+.div-item-svg-repo:hover{
+    fill: black;
+}
+
+
+.title-repo-git{
+    display: flex;
+    margin-top: 20px;
+}
+
+.div-link-repo{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* seccion del footer */
+
+
+
+.div-social-media-footer{
+    display: none;
+}
+
+.footer-page{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 200px;
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 3px solid gray;
+    box-shadow: 0px -5px 5px gray;
+}
+
+.div-container-credits{
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-credits{
+    color: rgb(23, 87, 204);
+}
+
+
+
+
+/* Creando nuevo diseño para dispositivos mas pequeños */
+
+@media (max-width:940px){
+
+    main{
+        padding: 40px;
+    }
+
+    .div-container-links-social{
+        display: none;
+    }
+    .div-container-email{
+        display: none;
+    }
+
+    .footer-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 200px;
+        height: 100px;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top: 3px solid gray;
+        box-shadow: 0px -5px 5px gray;
+    }
+
+    .div-social-media-footer{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .div-container-credits{
+        height: 50%;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+}
+
+
+
+@media (max-width:950px){
+    /* seccion de la barra de navegacion  */
+
+    .nav-label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-container-url-menu{
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        clip-path: circle(0 at center);
+        transition: all .3s;
+    }   
+
+    .nav-container-li-menu{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 100px 100px;
+    }
+    
+    
+    .nav-item-li-menu{
+        background-color: rgb(82, 111, 240);
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-input:checked + .nav-container-url-menu{
+        clip-path: circle(100% at 50% 50%);
+        transition: all .3s; 
+    }
+
+    .nav-menu-svg{
+        display:initial;
+        margin-right:20px;
+    }
+
+    .nav-url-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .item {
+        --clippy: polygon(0);
+    }
+
+      
+    .item:hover {
+        --clippy: polygon(0);
+    }
+
+
+
+    /* seccion de projects */
+    .section-projects{
+        background-color: rgb(235, 235, 235);
+        display: flex;
+        margin-top: 400px;
+        padding: 40px 30px;
+        flex-direction: column;
+        height: 800px;
+        border-radius: 10px;
+        border: 3px solid grey;
+        box-shadow: -15px 15px rgb(158, 155, 155);
+    }
+
+
+    .div-ul-container-items-project{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 190px 190px 190px;
+        gap: 20px 30px;
+        list-style-type: none;
+        padding: 10px;
+        grid-auto-flow: column;
+    }
+
+
+    .div-ul-li-project{
+        width: 100%;
+        height: 100%;@media (max-width:950px)
+    }
+    .div-ul-li-project:hover{
+        transform: perspective(30px) translateZ(2.5px);
+        box-shadow: -8px 0px 5px gray;
+        transition: perspective 1s;
+        transition: box-shadow .1s;
+    }
+
+
+    .div-container-figure-a{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div-container-github-svg-repository{
+        display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
+    .div-item-svg-folder{
+        fill: rgb(220, 220, 221);
+    }
+
+
+    .div-item-svg-repo{
+        fill:rgb(220, 220, 221);
+        transition: fill .5s;
+    }
+
+    .div-item-svg-repo:hover{
+        fill: black;
+    }
+
+
+    .title-repo-git{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .div-link-repo{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+
+/* modificando la seccion projects */
+
+@media (max-width:600px){
+    .section-projects{
+        background-color: rgb(235, 235, 235);
+        display: flex;
+        margin-top: 400px;
+        padding: 40px 30px;
+        flex-direction: column;
+        height: 1400px;
+        border-radius: 10px;
+        border: 3px solid grey;
+        box-shadow: -15px 15px rgb(158, 155, 155);
+    }
+
+
+    .div-ul-container-items-project{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: 190px 190px 190px 190px 190px 190px;
+        gap: 20px 30px;
+        list-style-type: none;
+        padding: 10px;
+        grid-auto-flow: column;
+    }
+
+
+    .div-ul-li-project{
+        width: 100%;
+        height: 100%;@media (max-width:950px)
+    }
+    .div-ul-li-project:hover{
+        transform: perspective(30px) translateZ(2.5px);
+        box-shadow: -8px 0px 5px gray;
+        transition: perspective 1s;
+        transition: box-shadow .1s;
+    }
+
+
+    .div-container-figure-a{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div-container-github-svg-repository{
+        display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
+    .div-item-svg-folder{
+        fill: rgb(220, 220, 221);
+    }
+
+
+    .div-item-svg-repo{
+        fill:rgb(220, 220, 221);
+        transition: fill .5s;
+    }
+
+    .div-item-svg-repo:hover{
+        fill: black;
+    }
+
+
+    .title-repo-git{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .div-link-repo{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+}
+
+
+/* modificando la seccion de acerca de mi */
+
+@media (max-width:540px){
+    .div-container-all-item-about {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        padding:20px 0;
+        gap: 10px 10px;
+    }
+
+    .div-container-description{
+        grid-area: 1 / 1 / span 1 / span 1;
+        display: flex;
+    }
+
+    .div-description-about{
+        display: flex;
+        padding: 30px 0;
+        font-size: 16px;
+    }
+
+    .div-ul-container-lan{
+        display: grid;
+        grid-area: 2 / 1 / span 1 / span 1;
+        grid-template-columns: repeat(2, 1fr);
+        list-style-type: none;
+        gap: 10px 0;
+    }
+
+    .div-item-lan{
+        color: rgb(51, 50, 50);
+        font-size: 15px;
+    }
+
+    .div-item-lan::before{
+        display: inline-block;
+        content: "▹ ";
+        height: 2px;
+        margin-right: 5px;
+        color: rgb(2, 74, 209);
+    }
+
+
+    .div-container-figure{
+        margin-top: 50px;
+        grid-area: 3 / 1 / span 1 / span 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    .div-container-foto{
+        object-fit: cover;
+        margin-left: 20px;
+        border-radius: 10px;
+        box-shadow: -10px 10px gray;
+    }
+
+
+    .div-foto-about{
+        position: relative;
+        top: 4px;
+        border-radius: 10px;
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:400px){
+    main {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 0px;
+    }
+}
+
+
+@media (max-width:316px){
+
+    /* seccion saludo */
+    
+    .section-saludo {
+        background-color: rgb(235, 235, 235);
+        display: flex;
+        margin-top: 90px;
+        padding: 20px 10px;
+        flex-direction: column;
+        height: 400px;
+        margin-bottom: 80px;
+        border-radius: 10px;
+        border: 3px solid grey;
+        box-shadow: -15px 15px rgb(158, 155, 155);
+    }
+
+
+    .div-container-nombre {
+        display: block;
+        height: 160px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    .div-h1-nombre {
+        display: block;
+        width: 100%;
+        color: black;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+
+    .div-container-a-button {
+        height: 50px;
+        width: 200px;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    /* seccion de projects */
+    .div-container-ul-projects{
+        padding: 0px;
+        height: 100%;
+    }
+}
+
+
+
+@media (max-width:221px){
+
+    .div-p-saludo {
+        display: block;
+        color: rgb(23, 87, 204);
+        font-size:15px;
+        font-weight: 600;
+    }
+    
+    .div-container-nombre {
+        display: block;
+        height: 120px;
+        width: 100%;
+        padding-top: 10px;
+    }
+    
+    .div-h1-nombre {
+        display: block;
+        width: 100%;
+        color: black;
+        font-size: 35px;
+        font-weight: 900;
+    }
+    
+    .div-container-p-intro {
+        display: block;
+        height: 80px;
+        width: 100%;
+    }
+    
+    .div-p-intro {
+        width: 100%;
+        font-size: 20px;
+        color: #2d3742e5;
+        font-weight: 500;
+    }
+    
+    .div-container-a-button {
+        height: 50px;
+        width: 150px;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+    
+    .div-container-button {
+        text-decoration: none;
+    }
+    
+    .div-button-about {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-left: 0;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(23, 86, 204, 0.829);
+        transition: all 0.2s;
+    }
+    
+    /* Seccion de acerca de mi */
+    
+    .section-about {
+        background-color: rgb(235, 235, 235);
+        border-radius: 10px;
+        margin-top: 400px;
+        margin-bottom: 80px;
+        border-radius: 10px;
+        padding: 20px 10px;
+        border: 3px solid grey;
+        box-shadow: -15px 15px rgb(158, 155, 155);
+    }
+    
+    .div-title-about {
+        display: flex;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+
+
+    /* seccion de acerca de mi */
+
+    .div-container-all-item-about {
+        display: block;
+    }
+
+    .div-description-about{
+        display: flex;
+        padding: 0px 0;
+        font-size: 15px;
+    }
+
+    .div-ul-container-lan{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style-type: none;
+        gap: 10px 0;
+    }
+
+    .div-item-lan{
+        color: rgb(51, 50, 50);
+        font-size: 13px;
+    }
+
+    .div-item-lan::before{
+        display: inline-block;
+        content: "▹ ";
+        height: 2px;
+        margin-right: 5px;
+        color: rgb(2, 74, 209);
+    }
+
+
+    .div-container-figure{
+        position: relative;
+        left: -30px;
+        display: block;
+    }
+
+
+    .div-container-foto{
+
+        box-shadow: 0px 0px;
+    }
+
+
+    .div-foto-about{
+        display: block;
+        position: relative;
+        height: 200px;
+        width: auto;
+    }
+
+    
+}
