@@ -12,9 +12,8 @@ html{
 
 body {
     background-color: #eae8e8;
-    height: 100%;
     overflow-x: hidden;
-    width: 100%;
+    max-width: 1400px;
 }
 
 main {
