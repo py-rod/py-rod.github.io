@@ -40,6 +40,7 @@ main {
     z-index: 100000000000000000;
     color: white;
     display: flex;
+    user-select: none;
 }
 
 
@@ -1138,7 +1139,7 @@ footer>img {
 }
 
 
-@media (max-width:500px) {
+@media (max-width:506px) {
     /* SECTION 1 */
 
     .content-section>div>small {
@@ -1310,6 +1311,7 @@ footer>img {
 
     .content-footer>div {
         flex-direction: column;
+        text-align: center;
     }
 
 
