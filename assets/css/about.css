@@ -157,7 +157,8 @@ main {
 
 .content-hobbies-skills {
     display: flex;
-    gap: 0 150px;
+    gap: 30px 150px;
+    flex-wrap: wrap;
 }
 
 
