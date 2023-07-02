@@ -399,7 +399,7 @@ main {
 
 .content-img-lang-front {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     gap: 20px;
     width: 100%;
     height: fit-content;
@@ -641,6 +641,86 @@ main {
 
 
 
+/* SECTION 4 */
+
+.section-4 {
+    padding: 100px 0;
+    background-color: #f9f7fb;
+}
+
+.content-contact>h3 {
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.content-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-form>img {
+    display: block;
+    width: 50%;
+}
+
+
+
+/* FORM */
+
+.form {
+    align-self: center;
+    width: 100%;
+}
+
+
+.form>div>label {
+    color: #A6A6A6;
+}
+
+.form>div>input {
+    width: 100%;
+}
+
+
+.form>div>input:focus {
+    border: 1px solid rgb(223, 223, 223);
+    box-shadow: none;
+    outline: 2px solid rgb(216, 216, 216);
+
+}
+
+
+.form>textarea {
+    height: 150px;
+    width: 100%;
+    resize: none;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 5px;
+    padding: 13px;
+}
+
+.form>textarea:focus {
+    outline: 2px solid rgb(216, 216, 216);
+    padding: 13px;
+}
+
+.form>button {
+    display: block;
+    width: 300px;
+    padding: 10px 0;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--color2);
+    color: var(--primary-color);
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+
 /* FOOTER */
 
 footer {
@@ -686,7 +766,11 @@ footer>img {
 }
 
 
-
+.form-contact>input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 
 /* RESPONSIVE */
@@ -937,6 +1021,30 @@ footer>img {
         background-color: white;
     }
 
+
+
+    /* SECTION 4 */
+    .content-contact>h3 {
+        font-size: 3.8rem;
+    }
+
+    .content-form {
+        flex-direction: column;
+    }
+
+    .content-form>img {
+        width: 85%;
+        margin: auto;
+    }
+
+    /* FORM */
+
+    .form {
+        align-self: center;
+        width: none;
+        max-width: 900px;
+    }
+
 }
 
 
@@ -1136,6 +1244,12 @@ footer>img {
         font-size: 3.3rem;
     }
 
+
+    /* SECTION 4 */
+    .content-contact>h3 {
+        font-size: 3.5rem;
+    }
+
 }
 
 
@@ -1307,10 +1421,21 @@ footer>img {
     }
 
 
+    /* SECTION 4 */
+    .content-contact>h3 {
+        font-size: 2.8rem;
+    }
+
+
     /* FOOTER */
 
     .content-footer>div {
         flex-direction: column;
+        text-align: center;
+    }
+
+
+    .content-footer>p {
         text-align: center;
     }
 
@@ -1359,5 +1484,10 @@ footer>img {
 
     .content-description-database>div>ul>li>img {
         display: none;
+    }
+
+    /* SECTION 4 */
+    .content-contact>h3 {
+        font-size: 2.2rem;
     }
 }

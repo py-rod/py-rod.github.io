@@ -416,6 +416,36 @@
                     </div>
                 </div>
             </section>
+
+            <section class="section-4">
+                <div class="content-section content-contact">
+                    <h3>Contact with me</h3>
+                    <div class="content-form">
+                        <img src="./assets/images/contact-cuate.svg" alt="">
+                        <form action="mailto:pyrod@gmail.com" class="form">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nameInput" required maxlength="50"
+                                    placeholder="Your name">
+                                <label for="nameInput">Your name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="emailInput" placeholder="Email address"
+                                    required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                                <label for="emailInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" maxlength="50" required
+                                    title="No tiene que estar vacio" id="subjectInput" placeholder="Subject">
+                                <label for="subjectInput">Subject</label>
+                            </div>
+                            <textarea cols="60" id="messageInput" maxlength="300" required></textarea>
+
+                            <button type="submit">Send</button>
+                            <script src="./assets/js/message_form.js"></script>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
